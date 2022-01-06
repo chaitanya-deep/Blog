@@ -5,9 +5,9 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllTags } from '@/lib/tags'
 import kebabCase from '@/lib/utils/kebabCase'
 
+//get tags 
 export async function getStaticProps() {
   const tags = await getAllTags('blog')
-
   return { props: { tags } }
 }
 

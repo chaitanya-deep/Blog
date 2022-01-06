@@ -21,15 +21,16 @@ module.exports = {
       colors: {
         primary: colors.teal,
         gray: colors.neutral,
+        secondary: colors.pink
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.secondary.500'),
               '&:hover': {
-                color: theme('colors.primary.600'),
+                color: theme('colors.secondary.600'),
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -137,7 +138,9 @@ module.exports = {
             },
             strong: { color: theme('colors.gray.100') },
             thead: {
-              color: theme('colors.gray.100'),
+              th: {
+                color: theme('colors.gray.100'),
+              },
             },
             tbody: {
               tr: {
